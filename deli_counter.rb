@@ -15,9 +15,8 @@ end
 
 def take_a_number(katz_deli, name)
   katz_deli << name
-  katz_deli.map do |index|
-    puts "Welcome, #{name}. You are number #{index.to_i + 1} in line."
-  end
+  position = katz_deli.index(name)
+  puts "Welcome, #{name}. You are number #{position.to_i + 1} in line."
 end
 
 
