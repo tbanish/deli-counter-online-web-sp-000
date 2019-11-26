@@ -9,6 +9,7 @@ def line(katz_deli)
       line_message += "#{index.to_i + 1}. #{person}"
     end
   end
+  puts "#{line_message}"
 end
 
 
